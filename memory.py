@@ -57,7 +57,7 @@ class Game:
             nr2 = int(input("Wybierz drugą kartę (numer): ")) - 1
             if nr2 < 0 or nr2 >= len(self.talia.karty) or self.talia.karty[nr2].dopasowana or nr1 == nr2:
                 print("Nieprawidłowy wybór! Spróbuj ponownie.")
-                self.talia.karty[nr1].odkryta = False  # cofnij pierwszą
+                self.talia.karty[nr1].odkryta = False
                 continue
             self.talia.karty[nr2].odkryta = True
 
